@@ -24,7 +24,7 @@ body {
   border-radius: 30px;
   padding: 0 20px;
   border: 1px solid #dce0e8;
-  box-shadow: 0px 12px 14px rgb(37 53 70 / 8%);
+  box-shadow: 0px 12px 14px #254a9914;
 }
 
 
@@ -47,7 +47,7 @@ body {
 ::placeholder {
   font-size: 12px;
   text-transform: capitalize;
-  color: #767b80;
+  color: #052419;
 }
 
 
@@ -62,8 +62,8 @@ body {
 .product {
   text-align: center;
   padding: 40px 20px;
-  border-radius: 15px;
-  background-color: #dee7eb;
+  border-radius: 10px;
+  background-color: #a3b2e4;
 }
 
 
@@ -71,7 +71,7 @@ body {
   text-decoration: none;
   font-size: 14px;
   padding: 10px 30px;
-  background-color: #253546;
+  background-color: #491799;
   color: #ffffff;
   border-radius: 30px;
 }
@@ -110,7 +110,7 @@ body {
     border-radius: 10px;
     padding: 0 20px;
     border: 1px solid #dce0e8;
-    box-shadow: 0px 12px 14px rgb(37 53 70 / 8%);
+    box-shadow: 0px 12px 14px #25354614;
   }
 }
 
@@ -126,5 +126,5 @@ body {
 
 #Invalid,#unknown{
   display: none;
-  color: red;
+  color: #ff6600;
 }
