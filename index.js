@@ -2,16 +2,24 @@
 function firstError(err) {
     return (document.getElementById("Invalid").style.display = err);
 }
+
+
+
 // unknown product error
 function secondError(errTwo) {
     return document.getElementById("unknown").style.display = errTwo;
 }
+
+
 // taking the value from the search field
 const searchInputValue = (field) => {
     const searchInput = document.getElementById(field);
     const searchInputValues = searchInput.value;
     return searchInputValues;
 };
+
+
+
 document.getElementById("search-button").addEventListener("click", () => {
     if (searchInputValue("serch-field") === "") {
         firstError("inherit");
@@ -29,6 +37,9 @@ document.getElementById("search-button").addEventListener("click", () => {
             .catch((error) => console.log("hello"));
     }
 });
+
+
+
 const showDataOnUi = (product) => {
     console.log(product.data.length);
     if (product.data.length == 0) {
@@ -54,12 +65,14 @@ const showDataOnUi = (product) => {
     }
 
 };
+
+
 function phoneDetail() {
     document
         .getElementById("product-wrapper")
-        .addEventListener("click", function (e) {
-            if (e.target.matches("#detail-btn")) {
-                const slug = e.target.dataset.slug;
+        .addEventListener("click", function (E) {
+            if (E.target.matches("#detail-btn")) {
+                const slug = E.target.dataset.slug;
                 console.log(slug);
                 fetch(`https://openapi.programming-hero.com/api/phone/${slug}`)
                     .then((response) => response.json())
@@ -67,6 +80,8 @@ function phoneDetail() {
             }
         });
 }
+
+
 const phoneDetailUi = (data) => {
     console.log(data.data);
     const detailsProductDiv = document.getElementById("product-detail-wrapper");

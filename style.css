@@ -7,6 +7,11 @@ body {
   margin: auto;
 }
 
+.container .title {
+  text-align: center;
+  color:#908fbc;
+}
+
 .search-box {
   padding: 60px 0;
 }
