@@ -1,13 +1,17 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
 .container {
   max-width: 1270px;
   margin: auto;
 }
+
 .search-box {
   padding: 60px 0;
 }
+
+
 #serch-field {
   width: 70%;
   height: 42px;
@@ -17,6 +21,8 @@ body {
   border: 1px solid #dce0e8;
   box-shadow: 0px 12px 14px rgb(37 53 70 / 8%);
 }
+
+
 #search-button {
   text-decoration: none;
   text-transform: capitalize;
@@ -26,14 +32,20 @@ body {
   border-radius: 30px;
   color: #ffffff;
 }
+
+
 .search-box-wrapper {
   text-align: center;
 }
+
+
 ::placeholder {
   font-size: 12px;
   text-transform: capitalize;
   color: #767b80;
 }
+
+
 #product-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
