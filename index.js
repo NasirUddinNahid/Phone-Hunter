@@ -50,7 +50,7 @@ const showDataOnUi = (product) => {
         const productElement = product.data;
         secondError("none")
         firstError("none");
-        productElement.forEach((element) => {
+        productElement.slice(0, 20).forEach((element) => {
             console.log(element.length);
             const div = document.createElement("div");
             div.classList.add("product");
